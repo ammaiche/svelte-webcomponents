@@ -20,12 +20,26 @@ module.exports = {
       {
         test: /\.svelte$/,
         exclude: /node_modules/,
+        include: /\.wc\.svelte$/,
         use: {
           loader: "svelte-loader",
           options: {
             compilerOptions: {
               dev: true,
               customElement: true,
+            },
+            preprocess: sveltePreprocess({ sourceMap: true }),
+          },
+        },
+      },
+      {
+        test: /\.svelte$/,
+        exclude: [/node_modules/, /\.wc\.svelte$/],
+        use: {
+          loader: "svelte-loader",
+          options: {
+            compilerOptions: {
+              dev: true,
             },
             preprocess: sveltePreprocess({ sourceMap: true }),
           },
