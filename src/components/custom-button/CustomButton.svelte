@@ -13,11 +13,14 @@
 
 <style lang="scss">
   @import "./CustomButton.scss";
+  .title{
+    color: blue;
+  }
 </style>
 
 <template>
   <csm-button primary on:csmClick={onButtonClick}>
-    <div class="slot">
+    <div class="title">
       <slot />
     </div>
     {myDescription}

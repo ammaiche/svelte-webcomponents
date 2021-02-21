@@ -9,10 +9,13 @@
 </script>
 
 <style>
+  .title{
+    color: red;
+  }
 </style>
 
 <template>
-  <h1>Demo Svelte application</h1>
+  <h1 class="title">Demo Svelte application</h1>
   <CustomButton myDescription="My description" on:customClick={handleClick}>
     <span>My button</span>
   </CustomButton>
