@@ -25,6 +25,7 @@ module.exports = {
           options: {
             compilerOptions: {
               dev: true,
+              customElement: true,
             },
             preprocess: sveltePreprocess({ sourceMap: true }),
           },

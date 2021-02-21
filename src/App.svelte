@@ -1,3 +1,5 @@
+
+<svelte:options tag="svelte-app" />
 <script lang="ts">
   import CustomButton from "./components/custom-button/CustomButton.svelte";
 
