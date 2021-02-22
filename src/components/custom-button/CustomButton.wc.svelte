@@ -1,3 +1,5 @@
+
+<svelte:options tag="custom-button" />
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
 

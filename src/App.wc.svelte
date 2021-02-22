@@ -1,7 +1,7 @@
 
 <svelte:options tag="svelte-app" />
 <script lang="ts">
-  import CustomButton from "./components/custom-button/CustomButton.svelte";
+  import CustomButton from "./components/custom-button/CustomButton.wc.svelte";
 
   function handleClick() {
     console.log("custom button clicked");
@@ -16,7 +16,7 @@
 
 <template>
   <h1 class="title">Demo Svelte application</h1>
-  <CustomButton myDescription="My description" on:customClick={handleClick}>
+  <custom-button myDescription="My description" on:customClick={handleClick}>
     <span>My button</span>
-  </CustomButton>
+  </custom-button>
 </template>
